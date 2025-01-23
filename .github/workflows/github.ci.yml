@@ -61,7 +61,8 @@ jobs:
 
       - name: Deploy to server via SSH
         run: |
-          ssh -o StrictHostKeyChecking=no root@77.238.233.105 "
+          ssh -o StrictHostKeyChecking=no root@77.238.233.105 " 
+            mkdir Pomodoro &&
             cd Pomodoro &&
             git pull &&
             docker-compose down &&
