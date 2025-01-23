@@ -65,7 +65,7 @@ jobs:
             mkdir Pomodoro &&
             cd Pomodoro &&
             git init
-            git clone https://github.com/VVProvkov/pomodoro_tes &&
+            git clone https://github.com/VVProvkov/pomodoro_test &&
             docker-compose down &&
             docker-compose up -d
           "
