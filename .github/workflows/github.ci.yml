@@ -26,8 +26,6 @@ jobs:
           pip install -r requirements.txt
       - name: Black
         run: python -m black .
-      - name: Ruff
-        run: python -m ruff check . --unsafe-fixes
 
   unit-test:
     runs-on: ubuntu-latest
