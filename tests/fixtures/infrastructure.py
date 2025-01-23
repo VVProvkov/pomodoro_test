@@ -12,7 +12,9 @@ def settings():
     return Settings()
 
 
-engine = create_async_engine(url="postgresql+asyncpg://postgres:password@0.0.0.0:5432/pomodoro-test", future=True, echo=True, pool_pre_ping=True)
+engine = create_async_engine(
+    url="postgresql+asyncpg://postgres:password@0.0.0.0:5432/pomodoro-test", future=True, echo=True, pool_pre_ping=True
+)
 
 
 AsyncSessionFactory = async_sessionmaker(
@@ -34,4 +36,3 @@ async def init_models(event_loop):
 @pytest_asyncio.fixture(scope="function")
 async def get_db_session() -> AsyncSession:
     yield AsyncSessionFactory()
-
