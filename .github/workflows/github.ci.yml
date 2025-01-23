@@ -64,7 +64,7 @@ jobs:
           ssh -o StrictHostKeyChecking=no root@77.238.233.105 " 
             mkdir Pomodoro &&
             cd Pomodoro &&
-            git init
+            git init &&
             git clone https://github.com/VVProvkov/pomodoro_test &&
             docker-compose down &&
             docker-compose up -d
