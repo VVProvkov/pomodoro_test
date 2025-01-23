@@ -27,7 +27,7 @@ jobs:
       - name: Black
         run: python -m black .
       - name: Ruff
-        run: python -m ruff check .
+        run: python -m ruff check . --unsafe-fixes
 
   unit-test:
     runs-on: ubuntu-latest
