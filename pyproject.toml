@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "Pomodoro-test"
+name = "pomodoro-test"
 version = "0.1.0"
 description = ""
 authors = ["Said Magomedow <saidmagom@mail.ru>"]
