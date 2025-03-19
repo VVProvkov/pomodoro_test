@@ -6,7 +6,7 @@ COPY pyproject.toml poetry.lock /app/
 
 RUN pip install poetry
 RUN poetry lock 
-RUN poetry -n install --only-root
+RUN poetry -n install --no-root
 
 
 COPY . /app
